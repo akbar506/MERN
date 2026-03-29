@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update - CRUD with EJS</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-900 p-10">
+        <nav class="flex gap-4 text-blue text-white">
+            <a href="/read">View Users</a>
+        </nav>
+        <main class="mt-10">
+            <h1 class="text-2xl mb-3 text-white font-bold">Update User</h1>
+            <form action="/update/<%= user._id %>" method="post" class="flex flex-col gap-y-2">
+                <input type="text" name="name" placeholder="Enter your name" value="<%= user.name %>" required class="outline bg-zinc-300 py-2 px-3 rounded-md w-64"> 
+                <input type="text" name="email" placeholder="Enter your email" value="<%= user.email %>" required class="outline bg-zinc-300 py-2 px-3 rounded-md w-64">
+                <input type="text" name="image" placeholder="Enter image url" value="<%= user.image %>" required class="outline bg-zinc-300 py-2 px-3 rounded-md w-64">
+                <input type="submit" value="Update User" class="px-2 py-2 bg-blue-700 cursor-pointer rounded-md w-26 text-white">
+            </form>
+        </main>
+    </div>
+</body>
+</html>
