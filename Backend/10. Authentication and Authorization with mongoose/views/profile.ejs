@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <div class="p-10 bg-neutral-900 min-h-screen text-white">
+        <div class="flex gap-3 items-center">
+            <img src="/images/default_avatar.webp" alt="User" class="w-24 h-24 rounded-full">
+            <div>
+                <h2 class="font-semibold text-2xl mb-2"><%= name %></h2>
+                <p class="text-zinc-500"><%= email %></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

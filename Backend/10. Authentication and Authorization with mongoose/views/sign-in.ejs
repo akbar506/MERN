@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <div class="p-10 bg-neutral-900 min-h-screen text-white">
+        <h1 class="mb-4 text-2xl font-bold">Sign in</h1>
+        <form action="/sign-in" method="post" class="flex flex-col gap-2">
+            <input type="text" name="email" class="outline-none border px-3 py-2 rounded-md w-64" placeholder="Enter your email">
+            <input type="text" name="password" class="outline-none border px-3 py-2 rounded-md w-64" placeholder="Enter your password">
+            <input type="submit" value="Sign in" class="px-3 py-2 bg-blue-500 rounded-md w-20 text-white">
+        </form>
+    </div>
+    
+</body>
+</html>
